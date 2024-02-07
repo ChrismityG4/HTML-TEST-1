@@ -1,0 +1,165 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+/*standard setting? */
+
+body { /*body of webpage*/
+    background: #0f172a; /*background color*/
+    color: white; /*letter color*/
+    min-height: 100vh; /*where body situated on page*/
+    display: flex;
+    flex-direction: column; /*organise in column (default is row)*/
+    gap: 14px;
+    font-family: sans-serif, Georgia, 'Times New Roman', Times, serif;
+}
+
+header {
+    display: flex; /*Horizontal*/
+    justify-content: space-between; /*divides Nav and Section in header*/
+    padding: 14px; /*pixel padding from edge of web*/
+}
+
+header section img { /* Header>Section>IMG profile picture*/
+    max-width: 30px; /*pixel size */
+    border-radius: 50%; /*rounding of proflie picture*/
+    border: 2px solid cyan; /*border thickness and colour*/
+}
+
+nav, section { /*NAV and section settingd*/
+    display: flex; /*Horizontal*/
+    align-items: center; /*alignment in header section*/
+    gap: 14px; /*pixel gap between Actions*/
+}
+
+.whitelink { /*Class for actions, put period before class name*/
+    color: white;
+}
+
+.greylink { /*Class for actions, put period before class name*/
+    color: lightgrey;
+}
+
+a { /*Action button properties*/
+    text-decoration: unset; /*removes underline(hyperlink)*/
+    font-size: 0.8em; /*font size in EM*/
+}
+
+a:hover { /*ACTION HOVER PROPERTIES*/
+    text-decoration: underline; /*Underline when hover*/
+}
+
+main { /*of webpage*/
+    flex: 1;
+    display: flex;
+    flex-direction: column; /*Change direction to vertical (default = horizontal)*/
+    align-items: center; /*change alignment horizontally (default = left of screen*/
+    justify-content: center; /*Center in page vertically */
+    gap: 24px; /*pizel gap between components of main section*/
+    padding: 14px; /*pizel distnace from border of page*/
+}
+
+.headerText { /*Class for actions, put period before class name*/
+    font-size: 4em; /*EM size of class = headerText*/
+    font-family: 'Times New Roman', Times, serif; /*font*/
+    color: white; 
+}
+
+.searchBar { /*Class for actions, put period before class name*/
+    display: flex; /*horizontal spread*/
+    width: 100%; /*width to main secton padding perameters*/
+    max-width: 700px; /*scalable max width when enlarging page*/
+    margin: 0 auto;
+    gap: 14px; /*input gap in search bar*/
+    border: 1px solid grey;
+    padding: 14px; /*pizel padding around search text and icons*/
+    border-radius: 24px; /*rounding of search bar edged*/
+}
+
+.searchBar:hover { /*Class for actions, put period before class name, (HOVER = Properties when hover cursor)*/
+    border-color: transparent; /*border changes when hover*/
+    background: #334155; /*search bar changes background color when hover t*/
+}
+
+.iconButtonContainer { /*Class for actions, put period before class name*/
+    display: flex; /*gap between icons*/
+    align-items: center; /*icons vertically center of search bar*/
+    gap: 14px; /*gap between icons*/
+}
+
+.iconButton { /*Class for actions, put period before class name*/
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer; /*cursor turns pointer on hover*/
+}
+
+input {
+    background: transparent;
+    outline: none; /*outiline of search bar input*/
+    border: none; 
+    color: white;
+    flex: 1;
+}
+
+.searchButtonsContainer { /*Class for actions, put period before class name*/
+    display: flex;
+    align-items: center;
+    gap: 14px; /*gap between buttons*/
+}
+
+.searchButtonsContainer button { /*Class for actions (secifically BUTTON properties), put period before class name*/
+    padding: 10px 14px; /*1st is vertical pad, 2nd is horizontal pad*/
+    border-radius: 4px;/*rounding on button box*/
+    background: #334155;
+    border: 1px solid transparent; /*Pixel size, style, color*/
+    color: white; /*text color*/
+   cursor: pointer; /*cursor turns pointer on hover*/
+}
+
+.searchButtonsContainer button:hover { /*hover properties of buttons in search button container*/
+    border: 1px solid darkgrey; /*pizel size, style, color*/
+}
+
+.languageSelection { /*Class for actions, put period before class name*/
+    font-size: 0.9em; /*EM font size*/
+}
+
+.languageSelection span { /*Class for actions (SPAN = LINK), put period before class name*/
+    color: cyan; /*colour of hyperlink SPAN*/
+}
+
+footer { /*footer section*/
+    display: flex;
+    flex-direction: column; /*page size adjustment formatting*/
+}
+
+footer > section { /*individual section of footer section*/
+    padding: 14px; /*pizel padding around each component*/
+}
+
+footer > section:last-child { /*last section of footer section*/
+    display: flex; 
+    flex-direction: column; /*page size adjustment formatting*/
+    align-items: center; /*vertical alignment in section*/
+    justify-content: space-around;
+    border-top: 1px solid darkgrey; /*specify a border on top of section, pizel size, line proerty, color*/
+}
+
+.footerLink { /*Class for actions, put period before class name*/
+    display: flex;
+    align-items: center; /*vertical alignment in section*/
+    gap: 14px; /*gap between links*/
+}
+
+.footerLink a { /*Class for actions, properties of ACTIONS in footerlink*/
+    cursor: pointer; /*cursor turns pointer on hover*/
+}
+
+@media (min-width: 540px) { /*@MEDIA minimum-width for scaling page*/
+    footer > section:last-child { /*of the last child section of footer*/
+        flex-direction: row; /*flex to a row when pizel minimum met*/
+    }
+}
