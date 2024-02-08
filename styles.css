@@ -30,23 +30,23 @@ header section img { /* Header>Section>IMG profile picture*/
 nav, section { /*NAV and section settingd*/
     display: flex; /*Horizontal*/
     align-items: center; /*alignment in header section*/
-    gap: 14px; /*pixel gap between Actions*/
+    gap: 14px; /*pixel gap between Anchor*/
 }
 
-.whitelink { /*Class for actions, put period before class name*/
+.whitelink { /*Class for Anchor, put period before class name*/
     color: white;
 }
 
-.greylink { /*Class for actions, put period before class name*/
+.greylink { /*Class for Anchor, put period before class name*/
     color: lightgrey;
 }
 
-a { /*Action button properties*/
+a { /*Anchor button properties*/
     text-decoration: unset; /*removes underline(hyperlink)*/
     font-size: 0.8em; /*font size in EM*/
 }
 
-a:hover { /*ACTION HOVER PROPERTIES*/
+a:hover { /*Anchor HOVER PROPERTIES*/
     text-decoration: underline; /*Underline when hover*/
 }
 
@@ -60,13 +60,13 @@ main { /*of webpage*/
     padding: 14px; /*pizel distnace from border of page*/
 }
 
-.headerText { /*Class for actions, put period before class name*/
+.headerText { /*Class for Anchor, put period before class name*/
     font-size: 4em; /*EM size of class = headerText*/
     font-family: 'Times New Roman', Times, serif; /*font*/
     color: white; 
 }
 
-.searchBar { /*Class for actions, put period before class name*/
+.searchBar { /*Class for Anchor, put period before class name*/
     display: flex; /*horizontal spread*/
     width: 100%; /*width to main secton padding perameters*/
     max-width: 700px; /*scalable max width when enlarging page*/
@@ -77,18 +77,18 @@ main { /*of webpage*/
     border-radius: 24px; /*rounding of search bar edged*/
 }
 
-.searchBar:hover { /*Class for actions, put period before class name, (HOVER = Properties when hover cursor)*/
+.searchBar:hover { /*Class for Anchor, put period before class name, (HOVER = Properties when hover cursor)*/
     border-color: transparent; /*border changes when hover*/
     background: #334155; /*search bar changes background color when hover t*/
 }
 
-.iconButtonContainer { /*Class for actions, put period before class name*/
+.iconButtonContainer { /*Class for Anchor, put period before class name*/
     display: flex; /*gap between icons*/
     align-items: center; /*icons vertically center of search bar*/
     gap: 14px; /*gap between icons*/
 }
 
-.iconButton { /*Class for actions, put period before class name*/
+.iconButton { /*Class for Anchor, put period before class name*/
     background: transparent;
     border: none;
     color: white;
@@ -104,13 +104,13 @@ input {
     flex: 1;
 }
 
-.searchButtonsContainer { /*Class for actions, put period before class name*/
+.searchButtonsContainer { /*Class for Anchor, put period before class name*/
     display: flex;
     align-items: center;
     gap: 14px; /*gap between buttons*/
 }
 
-.searchButtonsContainer button { /*Class for actions (secifically BUTTON properties), put period before class name*/
+.searchButtonsContainer button { /*Class for Anchor (secifically BUTTON properties), put period before class name*/
     padding: 10px 14px; /*1st is vertical pad, 2nd is horizontal pad*/
     border-radius: 4px;/*rounding on button box*/
     background: #334155;
@@ -123,11 +123,11 @@ input {
     border: 1px solid darkgrey; /*pizel size, style, color*/
 }
 
-.languageSelection { /*Class for actions, put period before class name*/
+.languageSelection { /*Class for Anchor, put period before class name*/
     font-size: 0.9em; /*EM font size*/
 }
 
-.languageSelection span { /*Class for actions (SPAN = LINK), put period before class name*/
+.languageSelection span { /*Class for Anchor (SPAN = LINK), put period before class name*/
     color: cyan; /*colour of hyperlink SPAN*/
 }
 
@@ -148,13 +148,13 @@ footer > section:last-child { /*last section of footer section*/
     border-top: 1px solid darkgrey; /*specify a border on top of section, pizel size, line proerty, color*/
 }
 
-.footerLink { /*Class for actions, put period before class name*/
+.footerLink { /*Class for Anchor, put period before class name*/
     display: flex;
     align-items: center; /*vertical alignment in section*/
     gap: 14px; /*gap between links*/
 }
 
-.footerLink a { /*Class for actions, properties of ACTIONS in footerlink*/
+.footerLink a { /*Class for Anchor, properties of Anchor in footerlink*/
     cursor: pointer; /*cursor turns pointer on hover*/
 }
 
